@@ -1,0 +1,96 @@
+html {
+  /* box-sizing: border-box; */
+}
+*,
+*::before,
+*::after {
+  /* box-sizing: inherit; */
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(150deg, rgb(221, 248, 167), skyblue);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+.brand {
+  /* border: 1px solid olive; */
+  margin-bottom: 0px;
+}
+
+.amenu {
+  color: rgb(16, 66, 51);
+  font-weight: 100;
+  letter-spacing: 0, 5px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 5%;
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+}
+.amenu:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1px;
+}
+.menu ul {
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  flex: 1;
+}
+
+@media all and (max-width: 1000px) {
+  .menu ul {
+    flex-wrap: wrap;
+  }
+  .menu li {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .menu ul {
+    flex-wrap: wrap;
+  }
+  .menu li {
+    flex: 1 1 50%;
+  }
+}
+
+dt {
+  font-weight: bold;
+  color: darkslategray;
+  padding: 15px;
+}
+dd {
+  margin-left: 25px;
+  padding: 25px;
+  text-align: justify;
+}
+
+pre code {
+  color: black;
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+dd code {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
