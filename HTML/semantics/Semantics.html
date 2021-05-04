@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Intro Salesforce W1</title>
+	<title>Semantics in HTML Salesforce W1</title>
 </head>
 <body>
 	<header>
-		<h1 class="brand">Intro</h1>
+		<h1 class="brand">Semantics in HTML</h1>
 	</header>
     <div class="wrapper">
         <nav class="menu"> 
@@ -18,33 +18,61 @@
 
                 <li><a class="amenu" href="#vraag9">Vraag9</a></li>
                 <li><a class="amenu" href="#vraag10">Vraag10</a></li>
-                <!-- short cut emmet li.amenu#vraag10${Vraag10.$}*7 -->
-                <li class="amenu" id="vraag101">Vraag10.1</li>
-                <li class="amenu" id="vraag102">Vraag10.2</li>
-                <li class="amenu" id="vraag103">Vraag10.3</li>
-                <li class="amenu" id="vraag104">Vraag10.4</li>
-                <li class="amenu" id="vraag105">Vraag10.5</li>
-                <li class="amenu" id="vraag106">Vraag10.6</li>
-                <li class="amenu" id="vraag107">Vraag10.7</li>
+                
+                <!-- emmet to generete list (li.amenu>a[href=vraag10$]{Vraag10.$})*7  -->
+               <!-- emmet to generete list correction to internal link (li.amenu>a[href=#vraag10$]{Vraag10.$})*7  -->
+               <li class="amenu"><a href="#vraag101">Vraag10.1</a></li>
+               <li class="amenu"><a href="#vraag102">Vraag10.2</a></li>
+               <li class="amenu"><a href="#vraag103">Vraag10.3</a></li>
+               <li class="amenu"><a href="#vraag104">Vraag10.4</a></li>
+               <li class="amenu"><a href="#vraag105">Vraag10.5</a></li>
+               <li class="amenu"><a href="#vraag106">Vraag10.6</a></li>
+               <li class="amenu"><a href="#vraag107">Vraag10.7</a></li>
+
 
             </ul>
         </nav>
 </div>
 
-<hl>Intro HTML</hl>
-(div>dl>(dt+dd)*3)+footer>p
+<!-- emmet to generate definition list (div>dl>(dt+dd)*3) -->
+<!-- emmet to generate definition sub list (dt#vraag10$+dd.antw.antw10$)*10 -->
 
 
 <section>
     <dl>
-        <dt id="vraag9">Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat
+        <dt id="vraag9">9. Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat
             wordt er bedoeld met HTML semantics? Waarom is het gebruik van
             semantics belangrijk?</dt>
-        <dd class="antw antw9"></dd>
-        <dt id="vraag10">10.Wat voor content zou je in de volgende elementen gebruiken?</dt>
+        <dd class="antw antw9">Gebruiken <q>Semantics</q> Een woord semantisch gebruiken is het gebruiken op een manier die goed is uitgelijnd met de betekenis van het woord. <br> Veel HTML-tags hebben een semantische betekenis. Dat wil zeggen dat het element zelf enige informatie overbrengt over het type inhoud dat zich tussen de openende en sluitende tags bevindt. <br>
+        Semantische opmaak vereist dat HTML-elementen worden gebruikt in overeenstemming met het beoogde doel. <br> Semantische opmaak vereist de scheiding van inhoud en presentatie. <br> Om semantische opmaak te schrijven, moeten we HTML-tags correct gebruiken, zodat onze opmaak zowel leesbaar als machinaal leesbaar is.
+        <dd class="antw antw9"> </dd>
+    
+            <a href="https://html.com/semantic-markup/#ixzz6ttvmdjpG">Lees meer</a>
+
+        </dd>
+        <dt id="vraag10">10. Wat voor content zou je in de volgende elementen gebruiken?</dt>
         <dd class="antw antw10"></dd>
-        <dt id="vraag10a"> </dt>
-        <dd class="antw antw11"></dd>
+        <dt id="vraag101">10.1 &lt; header &gt;</dt>
+        <dd class="antw antw101"></dd>
+        <dt id="vraag102">10.2 &lt; header &gt;</dt>
+        <dd class="antw antw102"></dd>
+        <dt id="vraag103">10.3 &lt; header &gt;</dt>
+        <dd class="antw antw103"></dd>
+        <dt id="vraag104">10.4 &lt; header &gt;</dt>
+        <dd class="antw antw104"></dd>
+        <dt id="vraag105"> &lt; header &gt;</dt>
+        <dd class="antw antw105"></dd>
+        <dt id="vraag106">10.5 &lt; header &gt;</dt>
+        <dd class="antw antw106"></dd>
+        <dt id="vraag107">10.6 &lt; header &gt;</dt>
+        <dd class="antw antw107"></dd>
+        <dt id="vraag108">10.7 &lt; header &gt;</dt>
+        <dd class="antw antw108"></dd>
+        <dt id="vraag109">10.8 &lt; header &gt;</dt>
+        <dd class="antw antw109"></dd>
+        <dt id="vraag1010">10.9 &lt; header &gt;</dt>
+        <dd class="antw antw1010"></dd>
+
     </dl>
 </section>
 
