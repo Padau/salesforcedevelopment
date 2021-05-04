@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style/style.css">
 	<title>Semantics in HTML Salesforce W1</title>
 </head>
 <body>
@@ -19,15 +19,16 @@
                 <li><a class="amenu" href="#vraag9">Vraag9</a></li>
                 <li><a class="amenu" href="#vraag10">Vraag10</a></li>
                 
-                <!-- emmet to generete list (li.amenu>a[href=vraag10$]{Vraag10.$})*7  -->
-               <!-- emmet to generete list correction to internal link (li.amenu>a[href=#vraag10$]{Vraag10.$})*7  -->
-               <li class="amenu"><a href="#vraag101">Vraag10.1</a></li>
-               <li class="amenu"><a href="#vraag102">Vraag10.2</a></li>
-               <li class="amenu"><a href="#vraag103">Vraag10.3</a></li>
-               <li class="amenu"><a href="#vraag104">Vraag10.4</a></li>
-               <li class="amenu"><a href="#vraag105">Vraag10.5</a></li>
-               <li class="amenu"><a href="#vraag106">Vraag10.6</a></li>
-               <li class="amenu"><a href="#vraag107">Vraag10.7</a></li>
+                <!--to remember - emmet to generete list (li.amenu>a[href=vraag10$]{Vraag10.$})*7  -->
+               <!--to remember - emmet to generete list correction to internal link (li>a.amenu[href=#vraag10$]{Vraag10.$})*7  -->
+
+               <li><a class="amenu" href="#vraag101" class="amenu">Vraag10.1</a></li>
+               <li><a class="amenu" href="#vraag102" class="amenu">Vraag10.2</a></li>
+               <li><a class="amenu" href="#vraag103" class="amenu">Vraag10.3</a></li>
+               <li><a class="amenu" href="#vraag104" class="amenu">Vraag10.4</a></li>
+               <li><a class="amenu" href="#vraag105" class="amenu">Vraag10.5</a></li>
+               <li><a class="amenu" href="#vraag106" class="amenu">Vraag10.6</a></li>
+               <li><a class="amenu" href="#vraag107" class="amenu">Vraag10.7</a></li>
 
 
             </ul>
@@ -56,24 +57,19 @@
         <dd class="antw antw10"></dd>
         <dt id="vraag101">10.1 &lt; header &gt;</dt>
         <dd class="antw antw101"></dd>
-        <dt id="vraag102">10.2 &lt; header &gt;</dt>
+        <dt id="vraag102">10.2 &lt; footer &gt;</dt>
         <dd class="antw antw102"></dd>
-        <dt id="vraag103">10.3 &lt; header &gt;</dt>
+        <dt id="vraag103">10.3 &lt; main &gt;</dt>
         <dd class="antw antw103"></dd>
-        <dt id="vraag104">10.4 &lt; header &gt;</dt>
+        <dt id="vraag104">10.4 &lt; nav &gt;</dt>
         <dd class="antw antw104"></dd>
-        <dt id="vraag105"> &lt; header &gt;</dt>
+        <dt id="vraag105">10.5 &lt; section &gt;</dt>
         <dd class="antw antw105"></dd>
-        <dt id="vraag106">10.5 &lt; header &gt;</dt>
+        <dt id="vraag106">10.6 &lt; aside &gt;</dt>
         <dd class="antw antw106"></dd>
-        <dt id="vraag107">10.6 &lt; header &gt;</dt>
+        <dt id="vraag107">10.7 &lt; article &gt;</dt>
         <dd class="antw antw107"></dd>
-        <dt id="vraag108">10.7 &lt; header &gt;</dt>
-        <dd class="antw antw108"></dd>
-        <dt id="vraag109">10.8 &lt; header &gt;</dt>
-        <dd class="antw antw109"></dd>
-        <dt id="vraag1010">10.9 &lt; header &gt;</dt>
-        <dd class="antw antw1010"></dd>
+        
 
     </dl>
 </section>
