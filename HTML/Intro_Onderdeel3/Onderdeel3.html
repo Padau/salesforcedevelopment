@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
+    <title>Onderdeel 3: Forms & Tabellen - HTML</title>
+</head>
+<body>
+    <h1>Onderdeel 3: Forms & Tabellen - HTML</h1>
+    <section>
+        <h2> HTML Forms</h2>
+        <p>HTML formulieren zijn de belangrijkste schakel tussen een gebruiker en een website
+            of een applicatie. Zij laten gebruikers toe gegevens naar websites te sturen. Meestal
+            zal dat naar de server zijn maar een webpagina kan de gegevens ook zelf
+            interpreteren.</p>
+            <p>Een HTML form bestaat uit een aantal elementen. Bijvoorbeeld textfields (bestaande
+                uit één of meerdere regels), choices of buttons.</p>
+
+<!-- emmet to generate definition sub list dl>(dt#vraag$@1{$@1.}+dd.antw.antw$)*13 -->
+
+    <dl>
+        <dt id="vraag1">1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+            vullen. Zie hieronder voor een voorbeeld:</dt>
+        <dd class="antw antw1">
+            <form action="post">
+                <fieldset>
+                    <div>
+                        <label for="Achternaam">Achternaam:</label>
+                        <input type="text" name="Achternaam" id="Achternaam" value="" placeholder="uw achternaam"> 
+                    </div>
+                    <div>
+                        <label for="Voornaam">Voornaam:</label>
+                        <input type="text" name="Voornaam" id="Voornaam" value="" placeholder="uw voornaam">
+                    </div>    
+            </fieldset>
+            </form>
+        </dd>
+        <dt id="vraag2">2. Naast input text fields zijn er ook nog andere input fields. Maakt een voorbeld voor:
+            <pre> 
+            ● radiobutton
+            ● checkbox
+            ● password
+            ● reset
+            ● submit
+            ● date
+            ● search
+            ● time
+            ● hidden
+            ● email
+            </pre>
+                    </dt>
+        <dd class="antw antw2">
+            <form action="post">
+                <fieldset>
+                    <fieldset>
+                        <legend>Geslacht</legend>
+                        <input type="radio" id="man" name="geslacht" value="man">
+                        <label for="man">Man</label><br>
+                        <input type="radio" id="Vrow" name="geslacht" value="Vrow">
+                        <label for="Vrow">Vrow</label><br>
+                        <input type="radio" id="Andere" name="geslacht" value="Andere">
+                        <label for="Andere">Andere</label>
+                    </fieldset>
+                    
+                        <label for="nieuwsbrief">Nieuwsbrief:</label>
+                        <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" value="nieuwsbrief">
+                        <br>
+                        <label for="wachtwoord">Wachtwoord:</label>
+                        
+                        <input type="password" name="wachtwoord" id="wachtwoord" value="nieuwsbrief">
+                        <br>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                        <br>
+                        <hr>
+                        <input type="date" name="Date" id="date" value="date">
+                        <input type="hidden" name="prodId" id="prodId"  value="xm234jq">
+                        <br>
+                        <label for="email">e-mail:</label>
+                        <input type="email" name="email" id="email" pattern=".+@globex.com" size="30" required placeholder="uw@email.com" >
+                        
+            </fieldset>
+            </form>
+        </dd>
+        <dt id="vraag3">3. Maak een input email field met een submit knop.
+            Wat gebeurt er wanneer je op de submit knop clickt met een random text?</dt>
+        <dd class="antw antw3">Als het formaat van de ingediende tekst geen e-mail is, verschijnt er een bericht waarin wordt uitgelegd dat @ in e-mail moet worden gebruikt.
+            <br>
+            <form>
+                <fieldset>
+                    <label for="email">e-mail:</label>
+                    <input type="email" name="email" id="email" size="30" placeholder="uw@email.com" >
+                <input type="submit" id="E mail" name="Submit" value="Submit">
+                </fieldset>
+              </form>
+        </dd>
+        <dt id="vraag4">4.Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:
+
+        </dt>
+        <dd class="antw antw4"><form action="post">
+                <fieldset>
+                    <legend>Persoons Gegevens</legend>
+                    <div>
+                        <label for="Achternaam">Achternaam:</label>
+                        <input type="text" name="Achternaam" id="Achternaam" value="" placeholder="uw achternaam"> 
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <label for="Voornaam">Voornaam:</label>
+                        <input type="text" name="Voornaam" id="Voornaam" value="" placeholder="uw voornaam">
+                    </div>  
+                    <br>
+                    <div>
+                        <label for="geboorte">Geboortedatum: </label>
+                        <input type="date" name="geboorte" id="geboorte" value="">
+                    </div>
+                    
+                        
+                        
+                        <!-- label is associated id -->
+                        <input type="radio" id="man" name="geslacht" value="man">
+                        <label for="man">Man</label>
+                        <input type="radio" id="Vrow" name="geslacht" value="Vrow">
+                        <label for="Vrow">Vrow</label><br>
+                        
+                    
+                    <div>
+                        <label for="postcode">Postcode: </label>
+                        <input type="text" class="postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="1000 AA"/> 
+                    </div>   
+                    <br>
+                    <div>
+                        <label for="postcode">Postcode: </label>
+                        <input type="text" class="adres"  placeholder="uw adres"/>
+                    </div>
+                    <br>
+                </fieldset>    
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+            </form></dd>
+        <dt id="vraag5">5. Naast input element heb je ook een select element. Hiermee kan je een dropdown list maken. Maak een drop down list.</dt>
+        <dd class="antw antw5">
+            <form action="post">
+                <label for="land">Select een land:</label>
+                <select name="land" id="land" value="">
+                    <option value=""> -- selecteer een land --</option>
+                    <option value="Nederland">Nederland</option>
+                    <option value="Engeland">Engeland</option>
+                    <option value="Frankrijk">Frankrijk</option>
+                    <option value="Duitsland">Duitsland</option>
+                </select>
+            </form>
+        </dd>
+        <dt id="vraag6">6. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+            waar je in kan gebruiken en leg dat uit?</dt>
+        <dd class="antw antw6">    
+            Dropdown list worden gebruikt om een lijst met items op uw formulieren te hebben, hetzij in een vervolgkeuzelijst of als een vaste lijst. de gebruiker kan een enkele optie selecteren uit een groot aantal items. Dit dient een vergelijkbare behoefte als de lijst met Radio Buttons, maar met als voordeel dat het bij lange lijsten minder ruimte in beslag neemt.
+        </dd>
+        <dd class="antw antw6">
+            Radio Buttons dwingen de gebruiker om slechts één item in een lijst te kiezen, zoals een optie Man / Vrouw, of om een ​​betaalmethode te selecteren.
+        </dd>
+        <dd class="antw antw6">    
+            Checkboxes worden gebruikt om uw gebruikers de mogelijkheid te geven om uit een reeks opties meer dan één optie te selecteren.
+        </dd>
+        
+        <dt id="vraag7">7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier willen we graag het volgende weten:
+            <pre>
+                ● Naam van dat persoon
+                ● Off hij/zij lidmaatschap heeft
+                ● E-mail van dat persoon
+                ● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+                ● Datum en tijdstip om te reserveren
+                ● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings voorwaardes
+                ● Een submit knop    
+            </pre>
+        </dt>
+        <dd class="antw antw7">
+            <form action="">
+                <fieldset>
+                    <legend>Sport Reserveringsformulier</legend>
+                    <div>
+                        <label for="naam">Naam:</label>
+                        <input type="text" name="naam" id="naam" placeholder="uw naam">
+                        <fieldset>
+                            <legend>Lidmaschap</legend>
+                            <input type="radio" name="Lid" value="Lid" id="lid">
+                            <label for="lid">Lid</label>
+                            <input type="radio" name="glid" value="glid" id="glid">
+                            <label for="glid">geen Lid</label>
+
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </form>
+        </dd>
+        <dt id="vraag8">8.</dt>
+        <dd class="antw antw8"></dd>
+        <dt id="vraag9">9.</dt>
+        <dd class="antw antw9"></dd>
+        <dt id="vraag10">10.</dt>
+        <dd class="antw antw10"></dd>
+        <dt id="vraag11">11.</dt>
+        <dd class="antw antw11"></dd>
+        <dt id="vraag12">12.</dt>
+        <dd class="antw antw12"></dd>
+        <dt id="vraag13">13.</dt>
+        <dd class="antw antw13"></dd>
+    </dl>
+    
+</section>
+<hr>
+<section>
+    <h2> Lijsten</h2>       
+
+    <footer>
+        <hr>
+          <h1> FOOTER </h1>
+              Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/" target="_blank">de TechGrounds Academy.</a>
+          
+          </footer>
+
+    </section>
+
+</body>
+</html>
