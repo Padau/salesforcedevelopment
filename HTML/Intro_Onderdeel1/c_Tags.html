@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Belangrijk TAGS in HTML - Salesforce W1</title>
+</head>
+<body>
+	<header>
+		<h1 class="brand">Belangrijk Tags in HTML</h1>
+	</header>
+    <div class="wrapper">
+        <nav class="menu"> 
+
+            <ul>
+                <!-- emmet to generete list correction to internal link (li.amenu>a[href=vraag$@11]{Vraag$@11})*8  -->
+                <li><a class="amenu" href="vraag11">Vraag11</a></li>
+                <li><a class="amenu" href="vraag12">Vraag12</a></li>
+                <li><a class="amenu" href="vraag13">Vraag13</a></li>
+                <li><a class="amenu" href="vraag14">Vraag14</a></li>
+                <li><a class="amenu" href="vraag15">Vraag15</a></li>
+                <li><a class="amenu" href="vraag16">Vraag16</a></li>
+                <li><a class="amenu" href="vraag17">Vraag17</a></li>
+                <li><a class="amenu" href="vraag18">Vraag18</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<!-- emmet to generate definition sub list (dt#vraag$@11+dd.antw.antw$@)*8 -->
+
+
+<section>
+    <h2>Headers </h2>
+
+    <p>Het gebruik van headers is belangrijk voor zoekmachines en de gebruikers van je website.</p>
+    <dl>
+        <dt id="vraag11">11. Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als voor de gebruikers. </dt>
+        <dd class="antw antw11">De headers bepalen het belang van de titels en ondertitels van een webpagina. Ze helpen de visueele organisatie van de site. Maar het belangrijkste punt is dat ze verband houden met de berekening die zoekmachines uitvoeren om de site te rangschikken, dat wil zeggen dat ze belangrijk zijn voor SEO "search engine optimization". Wanneer een gebruiker op internet zoekt, identificeren zoekmachines kopteksten en selecteren ze wat het meest relevant is om  te retorneren. 
+            Gebruikspraktijken:</dd>
+            <dd class="antw antw11">Gebruikspraktijken:
+                <ul>
+                    <li> Gebruik een trefwoord na H1 en H2 om identificatie door de mechanismen te vergemakkelijken; </li>
+                    <li> Het kopteksten moeten unique zijn special voor h1 kopteksten; </li>
+                    <li> Het wordt aanbevolen dat er slechts één H1 per pagina is; </li>
+                    <li> Volg de hiërarchie om de tekst niet te verwarren. </li>
+                </ul></dd>
+
+        <dt id="vraag12">12. Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat: <br>
+        <img src="headers.PNG" alt="headers example"></dt>
+        <dd class="antw antw12">
+<h1>Headings opdrachten</h1>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p>Met de code:</p>
+<!--  -->
+<pre><code>
+&lt;h1&gt;Headings opdrachten&lt;/h1&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt; &lt; !--  niet vergeeten: niet aanbevolen 2 h1 in één pagina --&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+        </dd>
+
+        <h2>Paragrafen</h2>
+        <dt id="vraag13">13.Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.  Geef hier een voorbeeld bij. </dt>
+        <dd class="antw antw3">Paragraaf definieer een paragraaf op de website. Het is een blokelement en is gebruikt om de gewoon content van de site.
+            <pre><code>
+                &lt;p&gt;Dit is een gewoon paragraaf!&lt;/p&gt;
+            </code></pre>
+        </dd>
+
+        <dt id="vraag14">14.Onderzoek en leg het verschil tussen het stoppen van alle tekst in één  paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit. </dt>
+        <dd class="antw antw14">Langen paragraafen hebben ten eerste één negative visual efect. Dat kunnen met <br> opgelossen worden, maar qua semantics dat is niet goed.  De <br> zijn voor gedichten en adressen waar de ruimte alleen voor visuele doeleinden is.</dd>
+        <dd class="antw antw14"> Dus door de inhoud in meerder paragraafen op te splitsen, wordt een pagina beter toegankelijk. Schermlezers en andere ondersteunende technologie bieden snelkoppelingen om hun gebruikers naar de volgende of vorige paragraaf te laten springen, zodat ze inhoud kunnen doorbladeren, zoals hoe witruimte visuele gebruikers laat overslaan. Door deze reden ook lege <p>elementen om ruimte tussen alinea's toe te voegen, zijn niet raadzaam. Beter later met  CSS- eigenschappen marginom het effect te creëren. </dd>
+
+        <dt id="vraag15">15.Reproduceer het volgende resultaat door gebruik te maken van text-headers  en de paragraaf tags.  </dt>
+        <dd class="antw antw15">
+            <div>
+                <h1>Mijn eerste website</h1>
+                <h2>Mijn eerste sub-kop</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptatibus error, quis esse ea repellendus fuga accusamus? Sapiente, quisquam nemo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nihil magni minima iusto harum reprehenderit illo quos corrupti fuga dolorum? Neque pariatur iure in, ipsa possimus quam officiis odit repudiandae.
+                </p>
+                <h2>Mijn tweede sub-kop</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet alias fugiat, repellendus recusandae nulla eum sunt aliquid cupiditate facere magnam, explicabo error! Nisi dicta, vel voluptas expedita minus, iure doloribus voluptatibus ratione, animi quaerat rem odio dolore modi reprehenderit excepturi distinctio amet soluta ut praesentium! Consequatur et deleniti quibusdam.</p>
+                <p>Enim blanditiis sunt neque voluptates fugit doloribus tenetur, autem, cum dolorem eaque repudiandae, iusto laborum expedita. Nam deserunt consequatur dignissimos magni reiciendis! Facere rem, dolore doloremque laborum possimus est repellat blanditiis cumque quia totam ut consequatur in adipisci eaque, sequi reiciendis, explicabo et. Hic numquam aperiam, dolore eum vitae ut.</p>
+            </div>
+        </dd>
+            
+
+        <dt id="vraag16">16.Voeg een <em>Horizontal rule</em>  toe en reproduceer het volgende resultaat.</dt>
+        <dd class="antw antw16">
+            <div>
+                <h1>Mijn eerste website</h1>
+                <h2>Mijn eerste sub-kop</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptatibus error, quis esse ea repellendus fuga accusamus? Sapiente, quisquam nemo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum nihil magni minima iusto harum reprehenderit illo quos corrupti fuga dolorum? Neque pariatur iure in, ipsa possimus quam officiis odit repudiandae.
+                </p>
+                <h2>Mijn tweede sub-kop</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet alias fugiat, repellendus recusandae nulla eum sunt aliquid cupiditate facere magnam, explicabo error! Nisi dicta, vel voluptas expedita minus, iure doloribus voluptatibus ratione, animi quaerat rem odio dolore modi reprehenderit excepturi distinctio amet soluta ut praesentium! Consequatur et deleniti quibusdam.</p>
+                <p>Enim blanditiis sunt neque voluptates fugit doloribus tenetur, autem, cum dolorem eaque repudiandae, iusto laborum expedita. Nam deserunt consequatur dignissimos magni reiciendis! Facere rem, dolore doloremque laborum possimus est repellat blanditiis cumque quia totam ut consequatur in adipisci eaque, sequi reiciendis, explicabo et. Hic numquam aperiam, dolore eum vitae ut.</p>
+                <hr>
+                <footer>
+                    <h1>Footer</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, autem ab eligendi soluta quidem deserunt!</p>
+                </footer>
+            </div>
+        </dd>
+
+        <dt id="vraag17">17. Voeg een link tag toe en reproduceer het volgende resultaat in de footer. Zodra een gebruiker op de link klikt wordt de pagina weergegeven in de huidige  browser window. Door gebruik te maken van attributen kan de link geopend worden  in bijvoorbeeld een nieuw tabblad. Voorbeelden van HTML attributen zijn  bijvoorbeeld een image tag die een “alt” attribuut heeft.  </dt>
+        <dd class="antw antw17">
+            <div>
+                <hr>
+                <footer>
+                    <h1>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl" rel="external" target="_blank">TechGrounds Academy</a> </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, autem ab eligendi soluta quidem deserunt!</p>
+                </footer>
+                <hr>
+            </div>
+        </dd>
+
+
+        <dt id="vraag18">18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen  en voeg deze als voorbeeld toe op je website.  </dt>
+        <dd class="antw antw18">In tegenstelling tot de &lt;a&gt; -tag die in het &lt;body&gt; -element is geschreven , moet de HTML- linktag in het &lt;head&gt; .De link tag kan hebben antaal elementen. De meer belangrijkste zijn:</dd>
+        <dd class="antw antw18">rel die staat voor "relatie" en is waarschijnlijk een van de belangrijkste kenmerken van het &lt;link&lt;element - de waarde geeft aan hoe het item waarnaar wordt gelinkt, gerelateerd is aan het bevattende document.</dd>
+        <dd class="antw antw18">href die Specificeert de locatie van het gekoppelde document</dd>
+        
+        <dd class="antw antw18">type die geef de relatie met de html document.</dd>
+        <dd class="antw antw18">hreflangstelt de taal van het gekoppelde document</dd>
+
+
+    </dl>
+</section>
+
+
+
+		
+</body>
+</html>
