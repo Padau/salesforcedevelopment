@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Onderdeel 2: Opdrachten HTML</title>
+</head>
+<body>
+    <h1>Onderdeel 2: Opdrachten HTML</h1>
+    <section>
+        <h2> Image, Audio & Video</h2>
+
+<!-- emmet to generate definition sub list dl>(dt#vraag${$.}+dd.antw.antw$)*22 -->
+<dl>
+    <dt id="vraag1">1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+        bestand aan te geven. Dit kan op 2 manieren en Wat houden deze 2 paths in?</dt>
+    <dd class="antw antw1"> <em>Absolute path</em></dd>
+    <dd class="antw antw1">Een absolute link is een hyperlink met een volledige URL , die alle informatie bevat die nodig is om een ​​bepaalde site, pagina of document of ander adresseerbaar item op internet te vinden .
+
+        Deze informatie omvat:
+        
+        Het te gebruiken protocol , zoals HTTP (Hypertext Transfer Protocol) of FTP (File Transfer Protocol).
+        De domeinnaam van de site waarop het gewilde item zich bevindt.
+        De directory of subdirectory (directory binnen een directory) in het domein waar het gezochte item zich bevindt.
+        De bestandsnaam van het item, indien van toepassing, vaak inclusief de extensie die het type item definieert (HTML-bestand, PDF-bestand, afbeeldingsbestand, video, enz.).
+        <pre><code>
+            &LT;a href="https://www.yourdomain.com/page.html"&gt;Link&LT;/a&gt;
+        </code></pre>
+    </dd>
+    <dd class="antw antw1"><em>Relative path</em></dd>
+    <dd class="antw antw1">Een relatieve link is relatief ten opzichte van de huidige pagina. In het bovenstaande voorbeeld staat het direct naast de huidige pagina (denk aan: in dezelfde map). Als het bestand wordt verplaatst van waar het is, kan de link breken (waarschijnlijk zal dit gebeuren).
+        <pre><code>
+            &lt;a href="page.html"&gt;Link&lt;/a&gt;
+        </code></pre> 
+    </dd>
+    <dd class="antw antw1">wijst naar dezelfde maap
+        
+        <pre><code>
+            &lt;a href="../page.html"&gt;Link&lt;/a&gt;
+        </code></pre>
+    </dd>
+    <dd class="antw antw1">wijst naar een maap omhoog
+        
+        <pre><code>
+            &LT;a href="../folder/page.html"&gt;Link&LT;/a&gt;
+        </code></pre>
+    </dd>
+    <dd class="antw antw1">Dit betekent dat je een map omhoog moet gaan en het bestand in die map moet zoeken
+        <pre><code>
+            &LT;a href="/folder/page.html"&gt;Link&LT;/a&gt;
+        </code></pre>
+    </dd>
+ 
+        <dd class="antw antw1">Dit betekent dat je een map moet zoeken onder de map waarin we ons bevinden en het bestand daar vinden.</dd>
+    
+
+    <dt id="vraag2">2. Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+        Een afbeelding tonen is afhankelijk van of de browser het ondersteunt.</dt>
+    <dd class="antw antw2">Er zijn verschillende afbeeldingsformaten: JPG, GIF, PNG, SVG, WebP, TiFF, BMP, etc...</dd>
+    <dd class="antw antw2">De oudere formaten zoals PNG, JPEG, GIF presteren slecht in vergelijking met nieuwere formaten zoals WebP en AVIF, maar genieten van een bredere "historische" browserondersteuning. De nieuwere afbeeldingsformaten worden steeds populairder omdat browsers zonder ondersteuning steeds irrelevanter worden (dwz vrijwel geen marktaandeel hebben).</dd>
+    <dt id="vraag3">3. Zoek uit welke browsers er zijn en maak een lijst van je antwoord.</dt>
+    <dd class="antw antw3">
+        <ol>
+            <li>Internet Explorer (verouderd)</li>
+            <li>Edge</li>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Opera</li>
+            <li>Vivaldi</li>
+            <li>Safari</li>
+            <li>QQ</li>
+            <li>Sogou Explorer</li>
+            <li>Yandex, etc...</li>
+        </ol>
+    </dd>
+    <dt id="vraag4">4. Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven
+        en onderaan je website door zowel gebruik te maken van de absolute path en
+        relative path.</dt>
+    <dd class="antw antw4"></dd>
+    <dt id="vraag5">5. Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te
+        gebruiken?</dt>
+    <dd class="antw antw5">Omdat er soms problemen kunnen zijn met het laden van de afbeelding en vervolgens beschrijft de alt-inhoud de afbeelding. Naast toegankelijkheid is het handig omdat het helpt om inhoud te illustreren voor mensen met zichtproblemen.</dd>
+    <dt id="vraag6">6. Laadt een bestand in als een audio op het scherm.
+        Extra: Maak het leuker door de audio op repeat te zetten.
+        Tip: gebruik controls attribute om audio af te spelen.</dt>
+    <dd class="antw antw6">
+        <audio loop controls src="https://actions.google.com/sounds/v1/alarms/bugle_tune.ogg" >
+            Your browser does not support the <code>audio</code>element.
+        </audio>
+    </dd>
+    <dt id="vraag6a">6.a. Een audio bestand heeft verschillende formaten. Niet alle formaten worden
+        ondersteund door de browser. Hiervoor is een oplossing voor.</dt>
+    <dd class="antw antw6a">Browsers ondersteunen niet allemaal dezelfde bestandstypen en audiocodecs ; je kunt meerdere bronnen binnen geneste <source>elementen aanbieden , en de browser zal dan de eerste gebruiken die hij begrijpt:
+        <pre><code>
+            <!-- example code begin -->
+            &lt;audio controls loop&gt;
+                &lt;source src="myAudio.mp3" type="audio/mpeg"&gt;
+                &lt;source src="myAudio.ogg" type="audio/ogg"&gt;
+                &lt;p&gt;Uw browser ondersteunt geen HTML5-audio.
+                Here is een &lt;a href="myAudio.mp4"&gt;
+                link naar de audio&lt;/a&gt;  in plaats daarvan..&lt;/p&gt;
+              &lt;/audio&gt; 
+              <!-- example code end -->
+        </code></pre>
+    </dd>
+    <dt id="vraag7">7.Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel
+        van is.</dt>
+    <dd class="antw antw7">Het voordeel is dat u meerdere bronnen kunt toevoegen, zodat verschillende browsers de methode kunnen kiezen die voor hen het beste werkt.</dd>
+    <dd class="antw antw7">    
+        <audio controls loop>
+            <source src="bugle_tune.ogg" type="audio/ogg">
+            <source src="bugle_tune.mp3" type="audio/mp3">
+            <p> Uw browser ondersteunt geen HTML5-audio. Hier is een <a href="https://actions.google.com/sounds/v1/alarms/bugle_tune.ogg">link naar de audio</a>  in plaats daarvan. </p>
+        </audio>
+    </dd>
+    <dt id="vraag8">8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
+        als een video op het scherm.
+       </dt>
+    <dd class="antw antw8">
+        <video  width="1200px" controls src="Flowers_Pexels Videos 1313516.mp4">Uw browser ondersteunt geen HTML5-video</video>
+        <!-- free video link back -->
+        <!-- https://www.pexels.com/video/beautiful-flowers-1313516/  -->
+        <!-- Video by Zuzanna Musial from Pexels -->
+    </dd>
+    <dt id="vraag8">8.a. Speel een video bestand af met <source> tag. Leg uit wat hier het voordeel van is.</dt>
+    <dd class="antw antw8a">Het voordeel is de zelfd van <code>audio</code>
+        dat u meerdere bronnen kunt toevoegen, zodat verschillende browsers de methode kunnen kiezen die voor hen het beste werkt.</dd>
+    <dd class="antw antw8a">
+            <video  controls  width="1200">
+                <source src="Flowers_Pexels Videos 1313516.mp4" type="video/mp4">
+                <source src="Flowers_Pexels Videos 1313516 (convert-video-online.com).webm" type="video/webm">
+                Uw browser ondersteunt geen HTML5-video 
+            </video>
+            <!-- free video link back -->
+            <!-- https://www.pexels.com/video/beautiful-flowers-1313516/  -->
+            <!-- Video by Zuzanna Musial from Pexels -->
+    </dd>
+</dl>
+</section>
+<hr>
+<section>
+    <h2> Lijsten</h2>
+    <dl>
+    <dt id="vraag9">9. Door gebruik te maken van lijsten in HTML kan je opsommingen eenvoudig
+        weergeven. Onderzoek de verschillende soorten lijsten en op welke wijze je deze
+        kunt toepassen.</dt>
+    <dd class="antw antw9">
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+                <ol>
+                    <li>Sub Item 1</li>
+                    <li>Sub Item 2</li>
+                </ol>
+            <li>Item 3</li>
+        </ol>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul>
+                <li>Sub item 1</li>
+                <li>Sub item 2</li>
+            </ul>
+            <li>Item 3</li>
+        </ul>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ol>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+            </ol>
+            <li>Item 3</li>
+        </ul>
+    </dd>
+    <dt id="vraag10">10.</dt>
+    <dd class="antw antw10"></dd>
+    <dt id="vraag11">11.</dt>
+    <dd class="antw antw11"></dd>
+    <dt id="vraag12">12.</dt>
+    <dd class="antw antw12"></dd>
+    <dt id="vraag13">13.</dt>
+    <dd class="antw antw13"></dd>
+    <dt id="vraag14">14.</dt>
+    <dd class="antw antw14"></dd>
+    <dt id="vraag15">15.</dt>
+    <dd class="antw antw15"></dd>
+    <dt id="vraag16">16.</dt>
+    <dd class="antw antw16"></dd>
+    <dt id="vraag17">17.</dt>
+    <dd class="antw antw17"></dd>
+    <dt id="vraag18">18.</dt>
+    <dd class="antw antw18"></dd>
+    <dt id="vraag19">19.</dt>
+    <dd class="antw antw19"></dd>
+    <dt id="vraag20">20.</dt>
+    <dd class="antw antw20"></dd>
+    <dt id="vraag21">21.</dt>
+    <dd class="antw antw21"></dd>
+    <dt id="vraag22">22.</dt>
+    <dd class="antw antw22"></dd>
+
+
+</dl>
+            
+
+
+
+    </section>
+
+</body>
+</html>
